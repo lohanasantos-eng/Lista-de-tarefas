@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de tarefas</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <main class="cartao">
+    <h1>Minhas tarefas</h1>
+    <p>Organização do dia.</p>
+
+    <form id="formulario">
+      <label for="tarefa">Nova tarefa</label>
+
+      <div class="entrada">
+        <input
+          id="tarefa"
+          type="text"
+          placeholder="Ex.: estudar JavaScript"
+          maxlength="100"
+          required
+        >
+
+        <button type="submit">Adicionar</button>
+      </div>
+    </form>
+
+    <ul id="lista" aria-label="Lista de tarefas"></ul>
+
+    <p id="resumo" role="status"></p>
+  </main>
+</body>
+</html>
